@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dashboard Demo - Yanzaclips</title>
+  <style>
+    body { background: #e5f9fb; color: #222; font-family: 'Montserrat', Arial, sans-serif; margin: 0; }
+    header { padding: 2rem 0; text-align: center; background: #1ed0fa; color: #fff; }
+    h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+    .dashboard { padding: 2rem 1rem; max-width: 700px; margin: 1rem auto; border-radius: 16px; background: #fff; box-shadow: 0 2px 8px #1ed0fa11; }
+    .input-row { margin: 1.2rem 0; }
+    label { display: block; margin: 0.3rem 0 0.7rem 0; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 0.8em; border-radius: 8px; border: 1px solid #1ed0fa88; font-size: 1rem; }
+    .template-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.1rem 0; }
+    .template { background: #1ed0fa22; border-radius: 12px; width: 150px; padding: 1rem 0.5rem; text-align: center; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+    .template:hover { background: #1ed0fa44; }
+    .actions { margin: 2rem 0 0 0; text-align: center; }
+    button { background: #1ed0fa; color: #fff; border: none; border-radius: 999px; padding: 0.7em 1.3em; font-size: 1.1rem; cursor: pointer; font-weight: bold; }
+    .actions button:hover { background: #18b9dd; }
+    nav { text-align: center; margin-top: 2rem; }
+    nav a { color: #1ed0fa; font-weight: bold; margin: 0 20px; text-decoration: none; font-size: 1.1rem; }
+    nav a:hover { color: #000; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dashboard - Demo Workflow</h1>
+  </header>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="dashboard-demo.html">Dashboard Demo</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog/Resources</a>
+      <a href="contact.html">Contact/Support</a>
+    </nav>
+  <div class="dashboard">
+    <form>
+      <div class="input-row">
+        <label for="script">Enter your meme script or voice prompt:</label>
+        <textarea id="script" rows="3" placeholder="Type your meme finance idea..."></textarea>
+      </div>
+      <div class="input-row">
+        <label for="template">Pick a Meme Template:</label>
+        <div class="template-grid">
+          <div class="template">Trending 🔥</div>
+          <div class="template">Finance Classic</div>
+          <div class="template">Viral Right Now</div>
+        </div>
+      </div>
+      <div class="input-row">
+        <label for="tts">Add TTS/Voice Style:</label>
+        <select id="tts">
+          <option>Trending Sound</option>
+          <option>AI Voice Clone</option>
+          <option>Funny Meme Voice</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button type="button">Generate Meme Video (Demo)</button>
+        <br><br>
+        <button type="button">Bulk Create</button>
+        <button type="button">Schedule Post</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
